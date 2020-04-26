@@ -10,6 +10,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   background(0);
   noCursor();
+  frameRate(5);
 }
 
 function draw() {
