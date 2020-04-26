@@ -1,7 +1,7 @@
 var img = [];
 
 function preload() {
-  for (var i=0; i<10; i++) {
+  for (var i=0; i<15; i++) {
     img[i] = loadImage("img"+i+".png");
   }
 }
@@ -19,7 +19,7 @@ function draw() {
   // line(0, mouseY, width, mouseY);
 
   // for (var i=0; i<5; i++) {
-    let number = random([1, 2, 3, 4, 0, 5, 6, 7, 8, 9]);
+    let number = random([1, 2, 3, 4, 0, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]);
     image(img[number], 0, mouseY, windowWidth, img[number].height*windowWidth/img[number].width);
   // }
 
