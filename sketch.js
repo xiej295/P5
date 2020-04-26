@@ -19,7 +19,7 @@ function draw() {
 
   // for (var i=0; i<5; i++) {
     let number = random([1, 2, 3, 4, 0, 5, 6, 7, 8, 9]);
-    image(img[number], 0, mouseY, windowWidth);
+    image(img[number], 0, mouseY, windowWidth, img[number].height*windowWidth/img[number].width);
   // }
 
 }
