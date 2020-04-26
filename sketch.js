@@ -7,7 +7,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1080, 1820);
+  createCanvas(windowWidth, windowHeight);
   background(0);
   noCursor();
 }
@@ -19,7 +19,7 @@ function draw() {
 
   // for (var i=0; i<5; i++) {
     let number = random([1, 2, 3, 4, 0, 5, 6, 7, 8, 9]);
-    image(img[number], 0, mouseY);
+    image(img[number], 0, mouseY, windowWidth);
   // }
 
 }
@@ -28,4 +28,8 @@ function mousePressed() {
   // noStroke();
   // fill(255, 100);
   // ellipse(mouseX, mouseY, 40, 40);
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
