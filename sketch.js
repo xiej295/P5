@@ -1,19 +1,22 @@
 var img = [];
+var img2;
 
 function preload() {
+  img2 = loadImage('outline_1.png');
   for (var i=0; i<15; i++) {
     img[i] = loadImage("img"+i+".png");
   }
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(1440, 810);
   background(0);
   noCursor();
   frameRate(5);
 }
 
 function draw() {
+  image(img2, 0, 0, 1440, 810)
   // stroke(255);
   // line(mouseX, 0, mouseX, height);
   // line(0, mouseY, width, mouseY);
